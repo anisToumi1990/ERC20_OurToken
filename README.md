@@ -1,66 +1,54 @@
-## Foundry
+**⭐️ Thank you Patrick Collins and Cyfrin Updraft! ⭐️**
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+# ERC20 Token Project
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## **Overview**
 
-## Documentation
+This project showcases a custom ERC20 token implementation using Solidity and the Foundry development framework. It serves as a practical example of how to create, test, and deploy an ERC20 token while adhering to the ERC20 standard.
 
-https://book.getfoundry.sh/
+### Key Objectives:
 
-## Usage
+- **ERC20 Implementation:** Create a fully compliant ERC20 token with essential functionalities like transfer, approval, and allowance.
+- **Testing Best Practices:** Write comprehensive tests to ensure the smart contract behaves as expected under various conditions.
+- **Educational Resource:** Provide a foundation for developers to learn about ERC20 tokens and smart contract development.
 
-### Build
 
-```shell
-$ forge build
-```
 
-### Test
+## **Features**
 
-```shell
-$ forge test
-```
+- **Minting Initial Supply:**  
+The token contract initializes with a fixed supply that is minted to the deployer’s address.
 
-### Format
+- **Token Transfers:**  
+Users can transfer tokens to other addresses securely.
 
-```shell
-$ forge fmt
-```
+- **Allowances:**  
+Supports delegated token transfers using the `approve` and `transferFrom` methods.
 
-### Gas Snapshots
+- **Comprehensive Tests:**  
+Includes tests for:
+  - Initial supply validation.
+  - Transfers and allowances.
+  - Edge cases, such as insufficient balances or allowance mismanagement.
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
+## **Project Structure**
 
-```shell
-$ anvil
-```
+- **Smart Contracts:**  
+  - **`OurToken.sol`**: The core ERC20 token implementation.
 
-### Deploy
+- **Testing Suite:**  
+  - Written using Foundry, featuring a robust suite of unit tests covering all major functionalities.
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+- **Deployment Script:**  
+  - Automates contract deployment for testing and production environments.
 
-### Cast
 
-```shell
-$ cast <subcommand>
-```
 
-### Help
+## **About Me**
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[![Anis Toumi Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Anis_NFT)
+[![Anis Toumi Linkedin](https://img.shields.io/badge/Linkedin-0e76a8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anis-toumi-1b158a83)
+
+I’m passionate about blockchain technology, Solidity development, and decentralized systems. This project is a step forward in my journey to master blockchain development!
